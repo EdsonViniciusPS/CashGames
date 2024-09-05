@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | CashGameTennis</title>
+    <title>Unity WebGL Player | Tropical Games</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=540 height=920 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=1280 height=720 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">CashGameTennis</div>
+        <div id="unity-build-title">Tropical Games</div>
       </div>
     </div>
     <script>
@@ -59,12 +59,12 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/CashGames.loader.js";
       var config = {
-        dataUrl: buildUrl + "/CashGames.data.gz",
-        frameworkUrl: buildUrl + "/CashGames.framework.js.gz",
-        codeUrl: buildUrl + "/CashGames.wasm.gz",
+        dataUrl: buildUrl + "/CashGames.data",
+        frameworkUrl: buildUrl + "/CashGames.framework.js",
+        codeUrl: buildUrl + "/CashGames.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "CashGame",
-        productName: "CashGameTennis",
+        productName: "Tropical Games",
         productVersion: "0.1",
         showBanner: unityShowBanner,
       };
@@ -94,8 +94,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "540px";
-        canvas.style.height = "920px";
+        canvas.style.width = "1280px";
+        canvas.style.height = "720px";
       }
 
       loadingBar.style.display = "block";
